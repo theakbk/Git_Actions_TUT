@@ -4,15 +4,15 @@
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "west europe"
 }
 
 variable "naming_prefix" {
   type    = string
-  default = "adolabs"
+  default = "theakbk"
 }
 
 variable "github_repository" {
   type    = string
-  default = "ado-labs-github-actions"
+  default = "theakbk/Git_Actions_TUT"
 }
