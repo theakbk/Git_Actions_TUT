@@ -1,0 +1,11 @@
+#powersehll hjælp om variable https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3
+
+opret variable
+> $Env:GITHUB_TOKEN = "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"
+
+vis variabel
+> $Env:GITHUB_TOKEN
+
+
+az account list - se service principle id'er
+az account set --subscription "9b039179-bc95-4e71-a20f-97c974d9e329"
