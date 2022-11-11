@@ -14,5 +14,5 @@ variable "naming_prefix" {
 
 variable "github_repository" {
   type    = string
-  default = "theakbk/Git_Actions_TUT"
+  default = "Git_Actions_TUT"
 }
