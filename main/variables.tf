@@ -4,12 +4,12 @@
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "west europe"
 }
 
 variable "naming_prefix" {
   type    = string
-  default = "adolabs"
+  default = "Git_actions_tut"
 }
 
 variable "asp_tier" {
