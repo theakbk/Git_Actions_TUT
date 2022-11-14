@@ -14,3 +14,7 @@ az account set --subscription "9b039179-bc95-4e71-a20f-97c974d9e329"
 #Hver gang login om morgenen kør
 az login --scope https://graph.microsoft.com//.default
 og login ellers ind på azure i browseren
+
+Ikke sæt resource group som env variabel. Den sættes og navngives i koden. 
+
+Fix lappeløsning med app_service_name i main.tf, lige nu sat til fixed string
