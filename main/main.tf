@@ -19,12 +19,12 @@ resource "random_integer" "name_suffix" {
 ##################################################################################
 
 resource "azurerm_resource_group" "app_service" {
-  name     = local.resource_group_name
+  name     = locals.resource_group_name
   location = var.location
 }
 
 resource "azurerm_app_service_plan" "app_service" {
-  name                = local.app_service_plan_name
+  name                = locals.app_service_plan_name
   location            = azurerm_resource_group.app_service.location
   resource_group_name = azurerm_resource_group.app_service.name
 
@@ -36,7 +36,7 @@ resource "azurerm_app_service_plan" "app_service" {
 }
 
 resource "azurerm_app_service" "app_service" {
-  name                = local.app_service_name
+  name                = locals.app_service_name
   location            = azurerm_resource_group.app_service.location
   resource_group_name = azurerm_resource_group.app_service.name
   app_service_plan_id = azurerm_app_service_plan.app_service.id
