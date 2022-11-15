@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "regionH_dev"
+  default = "regionHdev"
 }
 
 variable "asp_tier" {
