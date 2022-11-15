@@ -4,22 +4,22 @@
 
 
 locals {
-  resource_group_name = "${var.naming_prefix}-${random_string.name_suffix.result}"
-  app_service_plan_name = "${var.naming_prefix}-${random_string.name_suffix.result}"
-  app_service_name = "${var.naming_prefix}-${random_string.name_suffix.result}"
+  resource_group_name = "${var.naming_prefix}-${random_integer.name_suffix.result}"
+  app_service_plan_name = "${var.naming_prefix}-${random_integer.name_suffix.result}"
+  app_service_name = "${var.naming_prefix}-${random_integer.name_suffix.result}"
 }
 
-resource "random_integer" "Xname_suffix" {
+resource "random_integer" "name_suffix" {
   min = 10000
   max = 99999
 }
 
 
-resource "random_string" "name_suffix" {
+resource "random_string" "Xname_suffix" {
   length           = 6
   special          = false
   lower = true
-  #numeric = false
+  number = false
   upper = false
 }
 
