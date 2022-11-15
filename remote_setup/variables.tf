@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "theakbk"
+  default = "RegionH"
 }
 
 variable "github_repository" {
