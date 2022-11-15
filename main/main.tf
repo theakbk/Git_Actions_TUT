@@ -17,7 +17,6 @@ resource "random_integer" "name_suffix" {
   }
 }
 
-
 resource "random_string" "Xname_suffix" {
   length           = 6
   special          = false
