@@ -5,7 +5,7 @@ terraform {
     required_providers {
         azurerm = {
             source = "hashicorp/azurerm"
-            version = "~> 2.0"
+            version = "~> 3.0.2"
         }
     
         random = {
@@ -19,6 +19,8 @@ terraform {
     backend "azurerm" {
         key = "app.terraform.tfstate"
     }
+
+    required_version = ">=1.3.4"
 }
 
 
