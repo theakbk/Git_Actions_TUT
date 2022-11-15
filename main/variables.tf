@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "Git_actions_tut"
+  default = "regionH_dev"
 }
 
 variable "asp_tier" {
